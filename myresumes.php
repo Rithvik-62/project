@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resumes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <style>
-        body {
-            height: 100vh;
-            background: rgb(249, 249, 249);
-            background: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(240, 232, 127, 1) 49%, rgba(246, 243, 132, 1) 100%);
-
-        }
-    </style>
-</head>
-
+<?php
+$title = "Register | Resume Builder";
+require './assets/includes/headder.php';
+require './assets/includes/navbar.php';
+$fn->AuthPage();
+?>
 <body>
 
-    <nav class="navbar bg-body-tertiary shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo" height="24" class="d-inline-block align-text-top">
-                Resume Builder
-            </a>
-            <div>
-                <button class="btn btn-sm btn-dark"><i class="bi bi-person-circle"></i> Profile</button>
-                <button class="btn btn-sm btn-danger"><i class="bi bi-box-arrow-left"></i></button>
-            </div>
-        </div>
-    </nav>
+
 
     <div class="container">
 
@@ -100,7 +72,6 @@
         </div>
 
     </div>
-
-</body>
-
-</html>
+<?php
+require './assets/includes/footer.php';
+?>

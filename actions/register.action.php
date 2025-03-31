@@ -27,7 +27,7 @@ if($post['full_name']&& $post['email_id']&& $post['password']){
     try{
     $db->query("INSERT INTO users(full_name,email_id,password) VALUES('$full_name','$email_id','$password')");
     $fn->setAlert((' you registered succesfully ! '));
-    $fn->redirect('../register.php');
+    $fn->redirect('../login.php');
     
 
     }catch(Exception $error){
